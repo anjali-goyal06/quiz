@@ -1,0 +1,121 @@
+*{
+	box-sizing: border-box;
+}
+#header2{
+FONT-SIZE:45px;
+font-family:verdana;
+margin-top:0px;
+padding:20px;
+margin-bottom:0;
+text-align:center;
+border-bottom:2px solid black;
+color:#000050;
+}
+
+h1{
+margin:0;
+padding:5px;
+font-size:30px;
+color:#000025;
+font-weight:normal;
+text-transform:capitalize;
+}
+
+div.nav1{
+margin:0;
+clear:both;
+width:100%;
+padding:0px 0px;
+display:none;
+}
+
+
+ol{
+display:block;
+margin:0px;
+padding:0px;
+text-align:left;
+
+}
+li{
+Box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+width:41%;
+float:left;
+padding:11px 70px;
+margin:15px 50px;
+display:block;
+order:2px solid lightblue;
+border-radius:20px;
+text-decoration:none;
+color:black;
+font-size:25px;
+
+}
+
+li:hover{
+display:block;
+ackground: -webkit-linear-gradient(to right, #bcd7f2, #5ea4b8);
+ackground: linear-gradient(to right, #bcd7f2, #5ea4b8);
+background-color: rgba(188,215,242,0.7);
+}
+
+li.qans1{
+width:90%;
+display:none;
+color:#000050;
+background-color: rgba(188,215,242,1);
+background-color:lightblue;
+margin-bottom:30px;
+color:#fff;
+	background:#003655;
+}
+
+div.next1{
+Box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+display:none;
+font-size:21px;
+text-align:right;
+color:white;
+background-image: linear-gradient(to right, #fb1751, #ff004d);
+margin-bottom:5%;
+margin-top:0px;
+margin-right:5.5%;
+float:right;
+order:2px solid lightblue;
+padding:10px 20px;
+border-radius:20px;
+font-family:verdana;
+background: #ff4444;
+}
+
+.ans1:active,.q1:active,.next1:active{
+transform:scale(0.9);
+transform:0.6s ease in;
+}
+
+div#finish{
+display:none;
+font-size:30px;
+text-align:center;
+margin:40px;
+padding:20px;
+background-color:#003655;
+color:white;
+}
+
+#check_ans{
+display:none;
+display:none;
+font-size:21px;
+clear:bot;
+float:left;
+padding:10px 20px;
+margin-left:4.5%;
+border-radius:20px;
+background-image: linear-gradient(to right, #fb1751, #ff004d);
+color:white;
+font-family:verdana;
+background: #ff4444;
+}

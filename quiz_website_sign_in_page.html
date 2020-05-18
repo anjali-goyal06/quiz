@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp and Login</title>
+	<link rel="stylesheet" type="text/css" href="csss.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container" id="container">
+
+
+<div class="overlay-container">
+	<div class="overlay">
+		<div class="overlay-panel overlay-left">
+			<h1>Welcome Back!</h1>
+			<p>To keep connected with us please login with your personal info</p>
+			<button class="ghost" id="signIn">Sign In</button>
+		</div>
+		<div class="overlay-panel overlay-right">
+			<h1>Hello, Friend!</h1>
+			<p>Enter your details and start journey with us</p>
+			<button class="ghost" id="signUp">Sign Up</button>
+		</div>
+	</div>
+</div>
+
+<div class="form-container sign-in-container">
+	<form action="#">
+		<h1>Sign In</h1>
+		
+	<input style="margin-top:30px" type="email" name="email" placeholder="Email">
+	<input type="password" name="password" placeholder="Password">
+
+	<button>Sign In</button>
+	</form>
+</div>
+
+<div class="form-container sign-up-container">
+
+<form name="myform" onsumbit="return validation()">
+	<h1>Create Account</h1>
+	
+	
+	<input style="margin-top:30px" type="text" name="name" placeholder="Name">
+	<input type="email" name="email" placeholder="Email">
+	<input type="text" name="phone" placeholder="Phone No.">
+	<input type="password" name="password" placeholder="Password">
+	<a href="quiz_site_original.html" style="color:white"><button type="submit"> 
+	SignUp  </button></a>
+</form>
+</div>
+</div>
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+	
+	
+	function validation()
+	{
+	//document.write(1);
+		var x=document.forms["myform"]["name"].value;
+		if(x=="")
+		{	alert("Fill Name");		
+			return false;    }
+		
+		var y=document.forms["myform"]["phone"].value;
+		//document.write(1);
+		if(y<1000000000 || y>100000000000)
+		{	alert("Fill Correct Phone No. of 10-digits");
+			return false;	}
+	}
+	
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="create_quiz_css_1.css">
+<link rel="stylesheet" type="text/css" href="create_quiz_css_2.css">
+<link rel="stylesheet" type="text/css" href="demo_js_css.css">
+<style>
+.nav1{
+display:none;
+}
+.next1{
+display:none;
+}
+#header2{
+display:none;
+}
+a{
+text-decoration:none;
+}
+a #a31{
+color:#fff;
+}
+a #a31:hover{
+text-decoration:underline;
+color:#ff4444;
+}
+</style>
+</head>
+<body>
+
+<script src="Script2.js"></script>
+<script src="Script3.js"></script>    
+
+<div id="contain1">
+	<div class="count_val">
+	<p style="font-family:verdana;font-size:36px;font-weight: bold;color:black;
+	margin-bottom:30px"> CREATE QUIZ </p>
+	<p style="color:#00507f">No. Of Questions <br> You Want<br>    </p>
+
+	<form name="myform1">
+		<input type="text" name="ucount" id="count_form" placeholder="1-5">    <br>
+		<input type="text" name="unameproject" id="count_form" placeholder="Project Name">
+		<br>
+	</form>
+
+<button type="button" id="submit_count" onclick="fun_new()"> OK </button>
+	</div>
+
+	<div class="demo">
+		<p id="a1" style="font-family:verdana;font-size:36px;font-weight: bold;
+		margin-bottom:0px;margin-top:120px;"> WANT A DEMO </p> <br>
+		<p id="a2" style="font-family:cursive;font-size:25px;text-decoration:underline;"
+	 	onclick="demo_open()">
+		CLICK HERE </p>
+		<a href="demo_js.html" target="_blank" > <p id="a31" style="font-family:cursive; 
+		font-size:25px;" onclick="demo_open()">  
+		</p><br>  </a>
+	</div>
+</div>
+
+<script>
+
+function demo_open(){
+const a=document.getElementById("a2");
+const b=document.getElementById("a1");
+document.getElementById("a31").innerHTML="Web Development Quiz";
+
+a.innerHTML="";
+b.style.marginTop="80px";
+}
+
+function fun_new(){
+
+	document.getElementById("contain1").style.display = "none";
+	document.getElementsByClassName("main")[0].style.display="block";
+	var name_project= document.forms["myform1"]["unameproject"].value ;
+	document.getElementById("header2").innerHTML=name_project;
+}
+</script>
+
+
+
+
+
+<div class="main">
+	<p id="p1" style="font-size:25px;text-align:center;font-family:verdana; 
+	order:2px solid black;padding:0px;margin-top:5px;margin-bottom:8px;">
+	Question 1 </p>
+	<form name="myform2" id="iform2">
+	<input type="text" id="uques" style="width:94.5%;height:73px;
+	margin-top:0px;font-size:25px;background:#003655; color:white;
+	"	placeholder="Enter the Question" name="nques">
+	<br>
+	<span id="z1">Correct Ans</span><input type="text" id="uans1" placeholder="Enter the Answer" name="nans1" 
+	style="margin-top:25px;margin-left:48px;background-color: rgba(188,215,242,0.7);">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans2" placeholder="Enter the Answer" name="nans2">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans3" 
+	placeholder="Enter the Answer" name="nans3" style="background-color: rgba(188,215,242,0.7);">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans4" placeholder="Enter the Answer" name="nans4">
+	<br>
+	<span id="z1">Explanation</span><input type="text" style="margin-top:35px;height:73px;
+	margin-left:55px;background-image:linear-gradient(#ff6666);background-color: rgba(188,215,242,0.7);;"
+	id="uexp" placeholder="Explanation (if any)" name="nexp">
+	<br>
+	</form>
+	
+	<button type="submit" class="ques_submit" onclick="getdata1()">  Next Question </button>
+</div>	
+
+
+
+
+
+<div class="main">
+	<p id="p1" style="font-size:25px;text-align:center;font-family:verdana; 
+	order:2px solid black;padding:0px;margin-top:5px;margin-bottom:8px;">
+	Question 2 </p>
+	<form name="myform3" id="iform2">
+	<input type="text" id="uques" style="width:94.5%;height:73px;
+	margin-top:0px;font-size:25px;background:#003655;; color:white;"	placeholder="Enter the Question" name="nques">
+	<br>
+	<span id="z1">Correct Ans</span><input type="text" id="uans1" placeholder="Enter the Answer" name="nans1" 
+	style="margin-top:25px;margin-left:48px">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans2" placeholder="Enter the Answer" name="nans2">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans3" placeholder="Enter the Answer" name="nans3">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans4" placeholder="Enter the Answer" name="nans4">
+	<br>
+	<span id="z1">Explanation</span><input type="text" style="margin-top:35px;height:73px;
+	margin-left:55px;background-image:linear-gradient(#ff6666);"
+	id="uexp" placeholder="Explanation (if any)" name="nexp">
+	
+	</form>
+	
+	<button type="submit" class="ques_submit" onclick="getdata2()" >  Next Question </button>
+</div>
+
+
+
+
+
+<div class="main">
+	<p id="p1" style="font-size:25px;text-align:center;font-family:verdana; 
+	order:2px solid black;padding:0px;margin-top:5px;margin-bottom:8px;">
+	Question 3 </p>
+	<form name="myform4" id="iform2">
+	<span id="z1"></span><input type="text" id="uques" style="width:94.5%;height:73px;
+	margin-top:0px;font-size:25px;background-image: linear-gradient(to right, rgba(251,23,81,0.8), rgba(256,0,77,0.8)); color:white;
+	"	placeholder="Enter the Question" name="nques">
+	<br>
+	<span id="z1">Correct Ans</span><input type="text" id="uans1" placeholder="Enter the Answer" name="nans1" 
+	style="margin-top:25px;margin-left:48px">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans2" placeholder="Enter the Answer" name="nans2">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans3" placeholder="Enter the Answer" name="nans3">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans4" placeholder="Enter the Answer" name="nans4">
+	<br>
+	<span id="z1">Explanation</span><input type="text" style="margin-top:35px;height:73px;
+	margin-left:55px;background-image:linear-gradient(#ff6666);"
+	id="uexp" placeholder="Explanation (if any)" name="nexp">
+	<br>
+	</form>
+	
+	<button type="submit" class="ques_submit" onclick="getdata3()">  Next Question </button>
+</div>
+
+	
+	
+	
+	
+	
+	
+<div class="main">
+	<p id="p1" style="font-size:25px;text-align:center;font-family:verdana; 
+	order:2px solid black;padding:0px;margin-top:5px;margin-bottom:8px;">
+	Question 4 </p>
+	<form name="myform5" id="iform2">
+	<span id="z1"></span><input type="text" id="uques" style="width:94.5%;height:73px;
+	margin-top:0px;font-size:25px;background-image: linear-gradient(to right, rgba(251,23,81,0.8), rgba(256,0,77,0.8)); color:white;
+	"	placeholder="Enter the Question" name="nques">
+	<br>
+	<span id="z1">Correct Ans</span><input type="text" id="uans1" placeholder="Enter the Answer" name="nans1" 
+	style="margin-top:25px;margin-left:48px">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans2" placeholder="Enter the Answer" name="nans2">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans3" placeholder="Enter the Answer" name="nans3">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans4" placeholder="Enter the Answer" name="nans4">
+	<br>
+	<span id="z1">Explanation</span><input type="text" style="margin-top:35px;height:73px;
+	margin-left:55px;background-image:linear-gradient(#ff6666);"
+	id="uexp" placeholder="Explanation (if any)" name="nexp">
+	<br>
+	</form>
+	
+	<button type="submit" class="ques_submit" onclick="getdata4()">  Next Question </button>
+</div>
+
+	
+	
+	
+	
+	
+
+<div class="main">
+	<p id="p1" style="font-size:25px;text-align:center;font-family:verdana; 
+	order:2px solid black;padding:0px;margin-top:5px;margin-bottom:8px;">
+	Question 5 </p>
+	<form name="myform6" id="iform2">
+	<span id="z1"></span><input type="text" id="uques" style="width:94.5%;height:73px;
+	margin-top:0px;font-size:25px;background-image: linear-gradient(to right, rgba(251,23,81,0.8), rgba(256,0,77,0.8)); color:white;
+	"	placeholder="Enter the Question" name="nques">
+	<br>
+	<span id="z1">Correct Ans</span><input type="text" id="uans1" placeholder="Enter the Answer" name="nans1" 
+	style="margin-top:25px;margin-left:48px">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans2" placeholder="Enter the Answer" name="nans2">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans3" placeholder="Enter the Answer" name="nans3">
+	<br>
+	<span id="z1">Other Options</span><input type="text" id="uans4" placeholder="Enter the Answer" name="nans4">
+	<br>
+	<span id="z1">Explanation</span><input type="text" style="margin-top:35px;height:73px;
+	margin-left:55px;background-image:linear-gradient(#ff6666);"
+	id="uexp" placeholder="Explanation (if any)" name="nexp">
+	<br>
+	</form>
+	
+	<button type="submit" class="ques_submit" onclick="getdata5()">  Next Question </button>
+</div>
+
+	
+	
+	
+	
+	
+
+	
+	
+
+	
+	<div id="header2" >
+<br>
+</div>
+
+<div class="nav1" >   
+<h1 class="head_ques" ><pre>           </pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> </li>
+<li class="q1" onclick="fun1(0)">  </li>
+<li class="q1" onclick="fun1(0)">  </li>
+<li class="ans1" onclick="fun1(1)"></li>
+<li class="qans1"> </li>
+</ol>     
+
+</div>
+ 
+<div class="next1"  onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+
+
+<div class="nav1">   
+<h1 class="head_ques" ><pre>  </pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> </li>
+<li class="q1" onclick="fun1(0)">  </li>
+<li class="ans1" onclick="fun1(1)">  </li>
+<li class="q1" onclick="fun1(0)"></li>
+<li class="qans1"> </li>
+</ol>     
+
+</div>
+ 
+<div class="next1"  onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+
+
+<div class="nav1" >   
+<h1 class="head_ques" ><pre>  </pre></h1>
+<ol type="1" >
+<li class="ans1" onclick="fun1(1)"> </li>
+<li class="q1" onclick="fun1(0)">  </li>
+<li class="q1" onclick="fun1(0)">  </li>
+<li class="q1" onclick="fun1(0)"></li>
+<li class="qans1"> </li>
+</ol>     
+
+</div>
+ 
+<div class="next1"  onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+
+
+<div class="nav1" >   
+<h1 class="head_ques" ><pre>  </pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> </li>
+<li class="q1" onclick="fun1(0)">  </li>
+<li class="q1" onclick="fun1(0)">  </li>
+<li class="ans1" onclick="fun1(1)"></li>
+<li class="qans1"> </li>
+</ol>     
+
+</div>
+ 
+<div class="next1"  onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+
+
+<div class="nav1">   
+<h1 class="head_ques" ><pre>  </pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> </li>
+<li class="q1" onclick="fun1(0)">  </li>
+<li class="ans1" onclick="fun1(1)">  </li>
+<li class="q1" onclick="fun1(0)"></li>
+<li class="qans1"> </li>
+</ol>     
+</div>
+
+
+<div id="check_ans"> </div>
+ 
+<div class="next1" onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+
+	
+<div id="finish"> 
+</div>
+
+
+
+<script>
+
+</script>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,66 @@
+*{
+box-sizing:border-box;
+}
+
+/*
+.ques_no{
+height:70px;
+
+width:100%;
+}  */
+
+.main{
+	width:100%;
+	margin:0 auto;
+	order:2px solid green;
+	padding:0;
+	display:none;
+}
+
+span#z1{
+	font-size:20px;
+	font-family:cursive;
+}
+form#iform2{
+	order:2px solid red;
+	padding:0px 20px 10px 35px;
+}
+input{
+	Box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	ackground-image:linear-gradient(to right,#fff1f3,#fff2ef);
+	ackground-color:#eee; 
+	height:45px;
+	margin-left:25px;
+	margin-right:10px;
+	width:83%;
+	margin-top:20px;
+	outline:none;
+	border-radius:5px;
+	Border:none;
+	font-size:20px;
+	order:1px solid #333;
+	color:#000050;
+	text-transform:capitalize;
+	ackground-color: rgba(188,215,242,0.7);
+}	
+
+.ques_submit{
+	border-radius:20px;
+	color:#fff;
+	font-family:cursive;
+	border:none;
+	outline:none;
+	font-size:20px;
+	float:right;
+	margin-right:60px;
+	padding:10px 15px;
+	Box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	background-image: linear-gradient(to right, #fb1751, #ff004d); 
+	margin-top:10px;
+	background: #ff3333;
+}
+.ques_submit:active{
+	transform:scale(0.9);
+}

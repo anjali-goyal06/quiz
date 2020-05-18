@@ -1,0 +1,183 @@
+*{
+box-sizing:border-box;
+}
+#header{
+margin-left:270px;
+max-width:30%;
+height:120px;
+font-family:verdana;
+font-weight:old;
+color:#2570b8;
+color:#fb1751;
+color:#004172;
+font-size:46px;
+order:2px solid green;
+/*  background-image: linear-gradient(to right , #2570b8 , #0959a7);  
+    background-image: linear-gradient(to right, #fb1751, #ff004d); 
+to right , #FFA500 , #FFD700      yellow color button	*/
+}
+
+.head_tag_online{
+
+}
+
+#nav{
+padding-top:0px;
+order:2px solid black;
+margin-bottom:55px;
+height:50px;
+width:100%;
+font-family: 'Baloo Bhai 2', cursive;
+}
+
+.nav1{
+	color:#000;
+}
+
+.nav1:hover{
+	color:#ff004d;
+}
+
+ul{
+padding:0;
+order:2px solid black;
+margin-left:170px;
+}
+
+li{
+float:left;
+order:2px solid black;
+padding:0px 21px;
+font-size:25px;
+}
+
+button{
+float:right;
+margin-let:380px;
+margin-right:15px;
+border-radius :20px;
+padding:8px;
+width:120px;
+font-size:20px;
+font-family: 'Baloo Bhai 2', cursive;
+background-image: linear-gradient(to right, #fb1751, #ff004d); 
+ackground: linear-gradient(to right, #003655, #004172);  
+border:none;         
+outline:none;
+color:white;
+font-weight:bold;
+background: #ff4444;
+}
+
+button:hover{
+	background-image: linear-gradient(to right, #fb1751, #ff004d);
+}
+
+button:active {
+	transform: scale(0.95);               /*  on click button shrinks  */
+}
+
+img#img1{
+order:2px solid red;
+float:left;
+width:250px;
+height:200px;
+}
+.imag_2{
+float:right;
+order:2px solid black;
+position:absolute;
+width:50%;
+height:400px;
+
+}
+.img_2{
+margin-top:50px;
+float:right;
+order:2px solid blue;
+width:45%;
+height:350px;
+background-image:url("t24j1rTlZj.jpg");
+background-size:100% 100%;
+}
+.section{
+margin-top:45px;
+padding:20px 35px;
+text-align:justify;
+font-size:22px;
+order:2px solid black;
+width:45%;
+font-family: 'Baloo Bhai 2', cursive;
+transform : translateX(0%);
+animation: slider3 7s 3 linear;
+}
+
+
+
+@keyframes slider3{
+0%{
+transform: translateX(-50%);
+opacity:0.3;
+}
+14%
+{
+transform: translateX(0%);
+opacity:1;
+}
+60%
+{
+transform: translateX(0%);
+opacity:1;
+}
+85%{
+
+opacity:0.1;
+}
+95%{
+transform : translateX(70%);
+opacity:0;
+}
+100%{
+translateX(-70%);
+opacity:0;
+}
+
+}
+
+.img_wave{
+margin-top:60px;
+width:100%;
+height:100px;
+background-image:url("wave_quiz.png");
+background-size:100% 100%;
+}
+
+.footer{
+clear:both;
+order:2px solid black;
+
+}
+
+.content{
+font-family: 'Baloo Bhai 2', cursive;
+font-size:20px;
+background-color: rgba(188,215,242,0.7);
+ackground-image:linear-gradient(to right,#bcd7f2,rgba(95,165,217,1));
+padding-top:60px;
+height:400px;
+line-height:3;
+font-size:15px;
+}
+
+.content1{
+order:2px solid black;
+float:left;
+width:50%;
+padding-left:150px;
+}
+.content2{
+order:2px solid black;
+float:left;
+width:50%;
+padding-left:150px;
+}

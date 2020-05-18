@@ -1,0 +1,200 @@
+<html>
+<head>
+<title> js </title>
+<link rel="stylesheet" type="text/css" href="demo_js_css.css">
+<style>
+
+</style>
+
+</head>
+<body>
+<script src="Script1.js"></script>
+<script> 
+
+var no_of_ques = prompt("Enter the no. of Ques you want in quiz  ",10);
+</script>
+
+<div id="header2" id="top">
+  WEB-DEVELOPMENT QUIZ
+<br>
+</div>
+
+<div class="nav1" style="display:block;">   
+<h1 ><pre>Ques 1   Inside which HTML element do we put the JavaScript?</pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> 1. < javascript ></li>
+<li class="q1" onclick="fun1(0)"> 2.< scripting > </li>
+<li class="q1" onclick="fun1(0)"> 3.< js > </li>
+<li class="ans1" onclick="fun1(1)"> 4.< script ></li>
+<li class="qans1">< script> tag is used in html to write js code in it </li>
+</ol>     
+
+</div>
+ 
+<div class="next1" style="display:block;" onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+
+
+
+
+
+
+<div class="nav1" >   
+<h1 > 	<pre> QUES 2. Where is the correct place to insert a JavaScript?   </pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> 1. < head > section </li>
+<li class="q1" onclick="fun1(0)"> 2.  < body > section  </li>
+<li class="ans1" onclick="fun1(1)"> 3.  < head > & < body > section  </li>
+<li class="q1" onclick="fun1(0)"> 4.  At the end  </li>
+<li class="qans1"> It can be decleared in both head and body section. </li>
+</ol>     
+</div>
+
+<div class="next1" onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+
+
+<div class="nav1" >   
+<h1 > 	<pre> QUES 3. What is the correct syntax for referring to an external script
+ called "xxx.js"?   </pre></h1>
+<ol type="1" >
+<li class="ans1" onclick="fun1(1)"> 1.< script src="xxx.js" ></li>
+<li class="q1" onclick="fun1(0)"> 2. < script name="xxx.js" ></li>
+<li class="q1" onclick="fun1(0)"> 3. < script href="xxx.js" ></li>
+<li class="q1" onclick="fun1(0)"> 4. < script onclick="xxx.js" ></li>
+<li class="qans1"> < script src="xxx.js" > is correct syntax for external script inside in either head or body. </li>
+</ol>     
+</div>
+
+<div class="next1" onclick="fun2()">NEXT /SKIP QUESTION </div>
+
+
+
+
+
+<div class="nav1" >   
+<h1 > 	<pre> QUES 4. How do you create a function in JavaScript?   </pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> 1. function = f1() </li>
+<li class="ans1" onclick="fun1(1)"> 2. function  f1()</li>
+<li class="q1" onclick="fun1(0)"> 3. function :f1() </li>
+<li class="q1" onclick="fun1(0)"> 4.  f1()</li>
+<li class="qans1"> function  f1(){  code....    } is the correct syntax. </li>
+</ol>     
+</div>
+
+<div class="next1" onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+
+<div class="nav1" >   
+<h1 > 	<pre> QUES 5. Which comment can only be used in a single line in a JavaScript?  </pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> 1. < !-- comments  -- > </li>
+<li class="q1" onclick="fun1(0)"> 2. / * comments     */ </li>
+<li class="ans1" onclick="fun1(1)"> 3. // comments</li>
+<li class="q1" onclick="fun1(0)"> 4. " comment"</li>
+<li class="qans1">Only this comment is there for single line . 1 & 2 option comments can be used for multiple lines.</li>
+</ol>     
+</div>
+
+<div class="next1" onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+
+
+
+<div class="nav1" >   
+<h1 > 	<pre> QUES 6.  Which HTML attribute is used to define inline styles?  </pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> 1. class </li>
+<li class="q1" onclick="fun1(0)"> 2. id </li>
+<li class="ans1" onclick="fun1(1)"> 3. style</li>
+<li class="q1" onclick="fun1(0)"> 4. src</li>
+<li class="qans1"> < tag_name style=" ...">  ...  < /tag_name> is the correct synatx for inline code.  </li>
+</ol>     
+</div>
+
+<div class="next1" onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+
+
+
+<div class="nav1" >   
+<h1 > 	<pre> QUES 7.  How do you add a color for all < h1 > elements?  </pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> 1 .  all.h1{ color:#fff;}</li>
+<li class="q1" onclick="fun1(0)"> 2 . h1.all{ color:#fff;} </li>
+<li class="q1" onclick="fun1(0)"> 3 . h1{ color=#fff;} </li>
+<li class="ans1" onclick="fun1(1)"> 4 . h1{ color:#fff;} </li>
+<li class="qans1">   h1  { color:#fff;}   <br> is correct syntax</li>
+</ol>     
+</div>
+
+<div class="next1" onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+
+
+
+<div class="nav1" >   
+<h1 > 	<pre> QUES 8. What is the correct CSS syntax for making all the < p > elements
+ bold?  </pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> < p style="text-size:bold"> </li>
+<li class="ans1" onclick="fun1(1)"> p{font-weight:bold} </li>
+<li class="q1" onclick="fun1(0)"> p{font-size:bold} </li>
+<li class="q1" onclick="fun1(0)"> < p font-weight="bold">  </li>
+<li class="qans1"> p {font-weight:bold}  <br>  is the correct syntax.  </li>
+</ol>     
+</div>
+
+<div class="next1" onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+
+
+<div class="nav1" >   
+<h1 > 	<pre> QUES 9.  How do you make a list that lists its items with squares?  </pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> 1.type::square </li>
+<li class="q1" onclick="fun1(0)"> 2. list-type::square</li>
+<li class="ans1" onclick="fun1(1)"> 3. list-style-type:square</li>
+<li class="q1" onclick="fun1(0)"> 4. list-style:square  </li>
+<li class="qans1"> < li style="list-style-type:square">  ...  < /li>  is used.   </li>
+</ol>     
+</div>
+
+<div class="next1" onclick="fun2()">NEXT / SKIP QUESTION </div>
+
+  
+  
+  
+  
+  
+<div class="nav1" >   
+<h1 > 	<pre> QUES 10. What is the correct HTML element for inserting a line break?   </pre></h1>
+<ol type="1" >
+<li class="q1" onclick="fun1(0)"> 1. <  break > </li>
+<li class="q1" onclick="fun1(0)"> 2. < hr ></li>
+<li class="ans1" onclick="fun1(1)"> 3. < br ></li>
+<li class="q1" onclick="fun1(0)"> 4.  < lb></li>
+<li class="qans1">  < br> tag is used for line break.   </li>
+</ol>     
+</div>
+
+<div id="check_ans"> </div>
+<div class="next1" onclick="fun2()"> RESULT </div>
+
+
+
+
+<div id="finish"> 
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
